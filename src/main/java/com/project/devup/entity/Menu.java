@@ -11,12 +11,12 @@ import javax.persistence.Id;
 @Entity
 public class Menu {
     @Id
-    private String MENU_ID;
+    private String menuId;
 
-    private String MENU_NAME;
-    private String MENU_URL;
-    private int DEPTH;
-    private String P_MENU_ID;
-    private String USE_YN;
-    private String AUTH_ID;
+    private String menuName;
+    private String menuUrl;
+    private int depth;
+    private String pMenuId;
+    private String useYn;
+    private String authId;
 }
