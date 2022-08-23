@@ -16,9 +16,10 @@ public class MainRepositoryJpa implements MainRepository{
 
     @Override
     public List<Menu> getTopMenu(String authId) {
-        List<Menu> result = em.createQuery("select m from Menu m where m.useYn = :useYn and m.authId = :authId", Menu.class)
+        List<Menu> result = em.createQuery("select m from Menu m where m.useYn = :useYn and m.authId = :authId and m.depth = :depth", Menu.class)
                 .setParameter("useYn", "Y")
                 .setParameter("authId", authId)
+                .setParameter("depth", 1)
                 .getResultList();
         return result;
     }

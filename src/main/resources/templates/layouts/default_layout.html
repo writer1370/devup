@@ -19,7 +19,21 @@
             rel="stylesheet">
     <!-- Custom styles for this template-->
     <link rel="stylesheet" th:href="@{/css/sb-admin-2.min.css}" >
+    <th:block layout:fragment="css"></th:block>
 
+    <!-- Bootstrap core JavaScript-->
+    <script th:src="@{/vendor/jquery/jquery.min.js}"></script>
+    <script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script th:src="@{/vendor/jquery-easing/jquery.easing.min.js}"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script th:src="@{/js/sb-admin-2.min.js}"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script th:src="@{/js/fragments/sidebar.js}"></script>
+    <th:block layout:fragment="script"></th:block>
 </head>
 
 <body id="page-top">
@@ -82,19 +96,6 @@
         </div>
     </div>
 </div>
-
-<!-- Bootstrap core JavaScript-->
-<script th:src="@{/vendor/jquery/jquery.min.js}"></script>
-<script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
-
-<!-- Core plugin JavaScript-->
-<script th:src="@{/vendor/jquery-easing/jquery.easing.min.js}"></script>
-
-<!-- Custom scripts for all pages-->
-<script th:src="@{/js/sb-admin-2.min.js}"></script>
-
-<!-- Custom scripts for all pages-->
-<script th:src="@{/js/fragments/sidebar.js}"></script>
 </body>
 
 </html>
