@@ -36,5 +36,11 @@ out/
 ### VS Code ###
 .vscode/
 
-## static ##
-static/
+## bootstrap resource ##
+/src/main/resources/static/css/
+/src/main/resources/static/img/
+/src/main/resources/static/js/demo/
+/src/main/resources/static/scss/
+/src/main/resources/static/vendor/
+/src/main/resources/static/js/sb-admin-2.min.js
+/src/main/resources/static/js/sb-admin-2.js

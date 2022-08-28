@@ -10,7 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.List;
 
 @SpringBootTest
-public class MainServiceIntegrationTest {
+public class MainServiceTest {
     @Autowired MainService mainService;
     @Autowired MainRepository mainRepository;
 
@@ -20,7 +20,7 @@ public class MainServiceIntegrationTest {
         String authId = "MEMBER";
 
         //when
-        List<Menu> topMenu = mainService.getTopMenu(authId);
+        List<Menu> topMenu = mainService.findMenu(authId);
 
         //then
         Assertions.assertThat(topMenu.size()).isEqualTo(3);

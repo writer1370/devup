@@ -6,6 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.time.LocalDateTime;
 
+@Entity
 public class Board {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long boardId;
@@ -16,6 +17,6 @@ public class Board {
     private String content;
     private LocalDateTime regDate;
     private LocalDateTime updDate;
-    private String useYn;
+    private String menuUrl;
 }
 

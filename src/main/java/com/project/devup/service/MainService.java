@@ -1,18 +1,19 @@
 package com.project.devup.service;
 
 import com.project.devup.entity.Menu;
-import com.project.devup.repository.MainRepositoryJpa;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.project.devup.repository.MainRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 public class MainService {
-    @Autowired
-    MainRepositoryJpa mainRepositoryJpa;
+    private final MainRepository mainRepository;
+    public MainService(MainRepository mainRepository) {
+        this.mainRepository = mainRepository;
+    }
 
-    public List<Menu> getTopMenu(String authId) {
-        return mainRepositoryJpa.getTopMenu(authId);
+    public List<Menu> findMenu(String authId) {
+        return mainRepository.findMenu(authId);
     }
 }

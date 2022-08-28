@@ -12,16 +12,18 @@
     <script th:src="@{/vendor/datatables/jquery.dataTables.min.js}"></script>
     <script th:src="@{/vendor/datatables/dataTables.bootstrap4.min.js}"></script>
     <script th:src="@{/js/demo/datatables-demo.js}"></script>
+    <script th:src="@{/js/page/school.js}"></script>
 </th:block>
 <!-- Content -->
 <div layout:fragment="content">
     <div class="container-fluid">
 
         <!-- Page Heading -->
-        <h1 class="h3 mb-2 text-gray-800">Tables</h1>
-        <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
-            For more information about DataTables, please visit the <a target="_blank"
-                                                                       href="https://datatables.net">official DataTables documentation</a>.</p>
+        <h1 class="h3 mb-2 text-gray-800">학교</h1>
+        <p class="mb-4">
+            <a target="_blank" href="/school/study">스터디</a>
+            <a target="_blank" href="/school/lecture">강의후기</a>
+        </p>
 
         <!-- DataTales Example -->
         <div class="card shadow mb-4">

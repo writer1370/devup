@@ -24,8 +24,8 @@ public class MainController {
 
     @GetMapping("/init/menu")
     @ResponseBody
-    public List<Menu> menu(@RequestParam("authId") String authId) {
-        List<Menu> topMenuList = mainService.getTopMenu(authId);
+    public List<Menu> findMenu(@RequestParam("authId") String authId) {
+        List<Menu> topMenuList = mainService.findMenu(authId);
         return topMenuList;
     }
 }

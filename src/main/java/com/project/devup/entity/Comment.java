@@ -5,7 +5,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.time.LocalDateTime;
 
-public class comment {
+public class Comment {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long commentId;
 
